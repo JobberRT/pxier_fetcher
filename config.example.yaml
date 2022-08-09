@@ -1,0 +1,31 @@
+factory:
+  fetch_interval: 15
+  selected_executor:
+    - "ihuan"
+    - "str"
+    - "tsx"
+    - "cpl"
+executor:
+  ihuan:
+    http_url: "https://ip.ihuan.me/tqdl.html"
+    statistics_url: "https://ip.ihuan.me/ti.html"
+    key_url: "https://ip.ihuan.me/mouse.do"
+    timeout: 30
+    each_fetch_num: 150
+    zone: ""
+    proxy: ""
+  str:
+    http_url: "https://raw.githubusercontent.com/shiftytr/proxy-list/master/http.txt"
+    socks5_url: "https://raw.githubusercontent.com/shiftytr/proxy-list/master/socks5.txt"
+    timeout: 15
+    proxy: "socks5://127.0.0.1:1089" # http://127.0.0.1:1089
+  tsx:
+    http_url: "https://raw.githubusercontent.com/TheSpeedX/SOCKS-List/master/http.txt"
+    socks5_url: "https://raw.githubusercontent.com/TheSpeedX/SOCKS-List/master/socks5.txt"
+    timeout: 15
+    proxy: "socks5://127.0.0.1:1089" # http://127.0.0.1:1089
+  cpl:
+    url: "https://raw.githubusercontent.com/clarketm/proxy-list/master/proxy-list-raw.txt"
+    timeout: 15
+    proxy: "socks5://127.0.0.1:1089" # http://127.0.0.1:1089
+mysql_url: "root:root@tcp(127.0.0.1:3306)/test?charset=utf8mb4&parseTime=True&loc=Local"
